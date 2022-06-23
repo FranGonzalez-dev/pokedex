@@ -1,0 +1,57 @@
+//  Mixins root
+@import './mixins.scss';
+//  Font-family
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --white : #fff;
+    --grass : #00ca91;
+    --fire : #e95c4d;
+    --water : #43ccff;
+    --bug : #aedf78;
+    --normal : #a5a5a5;
+    --poison : #611380;
+    --electric : #f9be00;
+    --ground : #bfac21;
+    --fairy : #f87ea7;
+    --fighting : #e81319;
+    --psychic : #8a0532;
+    --ghost : #8e55a4;
+    --rock : #776a3e;
+    --ice : #66d1e5;
+    --flying : #5eb9b2;
+    --dark : #2d221c;
+    --dragon : #29036a;
+    --steel : #7b8e8a;
+    --unknown : #454545;
+}
+
+* {
+    @include reset-pm();
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+****    Pokemon Classes
+*/
+.grass { background-color: var(--grass); }
+.fire { background: var(--fire); }
+.water { background: var(--water); }
+.bug { background: var(--bug) }
+.normal { background: var(--normal) }
+.poison { background: var(--poison); }
+.electric { background: var(--electric) }
+.ground { background: var(--ground); }
+.fairy { background: var(--fairy); }
+.fighting { background: var(--fighting); }
+.psychic { background: var(--psychic); }
+.ghost { background: var(--ghost); }
+.rock { background:  var(--rock); }
+.ice { background:  var(--ice); }
+.flying { background:  var(--flying); }
+.dark { background: var(--dark); } 
+.dragon { background: var(--dragon); }
+.steel { background: var(--steel); }
+.unknown { background: var(--unknown); }

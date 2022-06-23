@@ -1,0 +1,8 @@
+@mixin reset-pm{
+    margin: 0;
+    padding: 0;
+}
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

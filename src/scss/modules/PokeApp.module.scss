@@ -1,0 +1,15 @@
+@import '../mixins.scss';
+
+.pokeApp {
+    @include container;
+    padding: 1rem;
+    .title {
+        
+        font-size: 4rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
