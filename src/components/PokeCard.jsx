@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from '../scss/modules/PokeCard.module.scss';
-
 import { TypeIcons } from './TypeIcons';
+
+import styles from '../scss/modules/PokeCard.module.scss';
 
 export const PokeCard = ({ pokemon }) => {
 

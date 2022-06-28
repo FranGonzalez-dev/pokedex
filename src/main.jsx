@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
+        <Route exact path='/pokemon/:id' element={ <PokeDetails/> } />
         <Route path='/' element={ <PokeApp /> } />
-        <Route path='/pokemon/:id' element={ <PokeDetails/> } />
       </Routes>
     </Router>
   </React.StrictMode>

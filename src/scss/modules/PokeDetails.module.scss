@@ -1,0 +1,72 @@
+@import '../mixins.scss';
+
+.PokeDetails {
+    margin: auto;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 15rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    .id {
+        border-radius: .5rem;
+        text-align: center;
+        width: 50px;
+        color: white;
+        background-color: rgba(255, 255, 255, .5);
+    }
+    h1 {
+        color: white;
+        text-transform: capitalize;
+        font-size: 3rem;
+    }
+    img {
+        @include h-w(20px, 20px);
+    }
+    .typesContainer {
+        display: flex;
+        gap: .5rem;
+        .type {
+            padding: .5rem;
+            background-color: rgba(255, 255, 255, .5);
+            border-radius: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            p {
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+}
+
+.containerImg {
+    position: absolute;
+    z-index: 1;
+    top: -250px;
+    width: 100%;    
+    @include center;
+    img {        
+        @include h-w(350px, 350px);
+    }
+}
+.details {
+    position: relative;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    padding: 1rem;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+

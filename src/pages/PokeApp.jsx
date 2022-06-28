@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
-import { getPokemonData } from "../helpers/getPokemonData";
+import { useEffect, useState } from 'react';
+import { getPokemonData } from '../helpers';
 
-import { PokeCard } from "../components/PokeCard";
+import { PokeCard } from '../components';
+
 import styles from '../scss/modules/PokeApp.module.scss'
 
 export const PokeApp = () => {
@@ -28,4 +29,4 @@ return (
             ))}
         </div>
     </div>
-) }
+)}
