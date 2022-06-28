@@ -6,3 +6,18 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+@mixin h-w($height: 100%, $width: 100%) {
+    height: $height;
+    width: $width;
+}
+@mixin flex ($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
